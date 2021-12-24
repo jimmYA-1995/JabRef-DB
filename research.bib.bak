@@ -5,6 +5,40 @@
   booktitle = {Proc. NeurIPS},
   title     = {Alias-Free Generative Adversarial Networks},
   year      = {2021},
+  comment   = {* Deal with "texture sticking" issue of current hierarchical architecture of generator.
+* goal: exhibits a more natural transformation hierarchy, where the exact sub-pixel position of each feature is exclusively inherited from the underlying coarse features.
+
+drawing on 利用，依賴
+after-images 後像, 餘像, 殘留影像
+page 2. 提到階層式的生成網路中不同階層的網路間，可以透過圖片邊界, StyleGAN 的 per-pixel noise input, positional encoding, aliasing 紀錄前面層的位置參考，以此位置生成高階的圖片特徵
+其中，aliasing 是圖像處理領域很常見且嚴重的事情，但在 GAN 的圖片領域似乎沒有很受到重視，作者給出兩個原因
+- 不理想的 upsampling filter(NN, bilinear, stride convolution) 造成些微殘留影像
+- Non-linearity (e.g. ReLU, Swish) 在 point-wise 上的應用
+常見的 filter 甚至是高品質的 filter 都盡可能透過放大 aliasing 達成在固定圖片座標上生成符合的紋理
+
+作者將 Aliasing 基於 Nyquist-Shannon 下探討，因此專注於 bandlimit 的連續函數，其可以用離散取樣方式表示
+* 若要解決上一段提到的問題，需要使得產生圖片細節時不依賴任何圖片座標，這相當於在 sub-pixel 平移(or 旋轉) 上有，迫使其有連續不變的性質
+
+Equivariant 等變映射
+implicit network
+- 作者發現 1x1 conv 是平移旋轉不變性下，生成模型所需的關鍵工具
+- Group-equivariant CNN
+- 許多目前 CNN 的平移不變性研究都在 classifier
+
+Whittaker-Shannon interpolation formula
+Dirac impulse
+ideal interpolation filter
+continuous interpolation
+sinc function
+作者引用 Nyquist-Shannon 的理論，說明如何在離散和連續的表示做轉換，並進一步說將此研究限制在 [0, 1] 之間，指出由於 convolution ，會需要比 sample rate ^ 2 更大的 grid，最後提到實作上只需要比 s 大一點點的 grid 即可，不需要理論上無限空間
+
+只要 operatio F 是 equivariant 的，我們可以將連續或離散的 representation 先經過 F. 再轉回另一個
+當 F. 是 2D 空間轉換時是 equivariant 的，因此作者在研究中採用平移與旋轉，並說明旋轉離散特徵相當於旋轉 spectral ，要注意半徑不能超過 s/2 (s 為 input sample rate)
+
+有了上述 F 的特性，我們可以從離散的 convolution 透過換算得到 連續的 convolution 可以表示成以一個離散的 kernel K 在連續的 feature 上做 convolution，並維持前面提到達成 equivariant 需要的條件
+
+Upsampling & downsampling
+radially symmetric kernel},
   file      = {:2021/Karras2021 - Alias Free Generative Adversarial Networks.pdf:PDF},
   groups    = {StyleGAN},
   keywords  = {Image synthesis, GAN},
