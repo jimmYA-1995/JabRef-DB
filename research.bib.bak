@@ -1,5 +1,3 @@
-% Encoding: UTF-8
-
 @InProceedings{Karras2021,
   author    = {Tero Karras and Miika Aittala and Samuli Laine and Erik H\"ark\"onen and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
   booktitle = {Proc. NeurIPS},
@@ -140,10 +138,236 @@ radially symmetric kernel},
   url        = {https://pose-with-style.github.io/},
 }
 
+@Article{Esser2020,
+  author        = {Patrick Esser and Robin Rombach and Björn Ommer},
+  title         = {Taming Transformers for High-Resolution Image Synthesis},
+  year          = {2020},
+  month         = dec,
+  abstract      = {Designed to learn long-range interactions on sequential data, transformers continue to show state-of-the-art results on a wide variety of tasks. In contrast to CNNs, they contain no inductive bias that prioritizes local interactions. This makes them expressive, but also computationally infeasible for long sequences, such as high-resolution images. We demonstrate how combining the effectiveness of the inductive bias of CNNs with the expressivity of transformers enables them to model and thereby synthesize high-resolution images. We show how to (i) use CNNs to learn a context-rich vocabulary of image constituents, and in turn (ii) utilize transformers to efficiently model their composition within high-resolution images. Our approach is readily applied to conditional synthesis tasks, where both non-spatial information, such as object classes, and spatial information, such as segmentations, can control the generated image. In particular, we present the first results on semantically-guided synthesis of megapixel images with transformers and obtain the state of the art among autoregressive models on class-conditional ImageNet. Code and pretrained models can be found at https://github.com/CompVis/taming-transformers .},
+  archiveprefix = {arXiv},
+  eprint        = {2012.09841},
+  file          = {:2020/Esser2020 - Taming Transformers for High Resolution Image Synthesis.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Lin2019,
+  author        = {Chieh Hubert Lin and Chia-Che Chang and Yu-Sheng Chen and Da-Cheng Juan and Wei Wei and Hwann-Tzong Chen},
+  title         = {COCO-GAN: Generation by Parts via Conditional Coordinating},
+  year          = {2019},
+  month         = mar,
+  abstract      = {Humans can only interact with part of the surrounding environment due to biological restrictions. Therefore, we learn to reason the spatial relationships across a series of observations to piece together the surrounding environment. Inspired by such behavior and the fact that machines also have computational constraints, we propose \underline{CO}nditional \underline{CO}ordinate GAN (COCO-GAN) of which the generator generates images by parts based on their spatial coordinates as the condition. On the other hand, the discriminator learns to justify realism across multiple assembled patches by global coherence, local appearance, and edge-crossing continuity. Despite the full images are never generated during training, we show that COCO-GAN can produce \textbf{state-of-the-art-quality} full images during inference. We further demonstrate a variety of novel applications enabled by teaching the network to be aware of coordinates. First, we perform extrapolation to the learned coordinate manifold and generate off-the-boundary patches. Combining with the originally generated full image, COCO-GAN can produce images that are larger than training samples, which we called "beyond-boundary generation". We then showcase panorama generation within a cylindrical coordinate system that inherently preserves horizontally cyclic topology. On the computation side, COCO-GAN has a built-in divide-and-conquer paradigm that reduces memory requisition during training and inference, provides high-parallelism, and can generate parts of images on-demand.},
+  archiveprefix = {arXiv},
+  eprint        = {1904.00284},
+  file          = {:2019/Lin2019 - COCO GAN_ Generation by Parts Via Conditional Coordinating (1).pdf:PDF},
+  keywords      = {cs.LG, cs.CV, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Xu2020,
+  author        = {Rui Xu and Xintao Wang and Kai Chen and Bolei Zhou and Chen Change Loy},
+  title         = {Positional Encoding as Spatial Inductive Bias in GANs},
+  year          = {2020},
+  month         = dec,
+  abstract      = {SinGAN shows impressive capability in learning internal patch distribution despite its limited effective receptive field. We are interested in knowing how such a translation-invariant convolutional generator could capture the global structure with just a spatially i.i.d. input. In this work, taking SinGAN and StyleGAN2 as examples, we show that such capability, to a large extent, is brought by the implicit positional encoding when using zero padding in the generators. Such positional encoding is indispensable for generating images with high fidelity. The same phenomenon is observed in other generative architectures such as DCGAN and PGGAN. We further show that zero padding leads to an unbalanced spatial bias with a vague relation between locations. To offer a better spatial inductive bias, we investigate alternative positional encodings and analyze their effects. Based on a more flexible positional encoding explicitly, we propose a new multi-scale training strategy and demonstrate its effectiveness in the state-of-the-art unconditional generator StyleGAN2. Besides, the explicit spatial inductive bias substantially improve SinGAN for more versatile image manipulation.},
+  archiveprefix = {arXiv},
+  eprint        = {2012.05217},
+  file          = {:2020/Xu2020 - Positional Encoding As Spatial Inductive Bias in GANs.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Dhariwal2021,
+  author        = {Prafulla Dhariwal and Alex Nichol},
+  title         = {Diffusion Models Beat GANs on Image Synthesis},
+  year          = {2021},
+  month         = may,
+  abstract      = {We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128$\times$128, 4.59 on ImageNet 256$\times$256, and 7.72 on ImageNet 512$\times$512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256$\times$256 and 3.85 on ImageNet 512$\times$512. We release our code at https://github.com/openai/guided-diffusion},
+  archiveprefix = {arXiv},
+  eprint        = {2105.05233},
+  file          = {:2021/Dhariwal2021 - Diffusion Models Beat GANs on Image Synthesis.pdf:PDF},
+  keywords      = {cs.LG, cs.AI, cs.CV, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Jacot2018,
+  author        = {Arthur Jacot and Franck Gabriel and Clément Hongler},
+  journal       = {In Advances in neural information processing systems (pp. 8571-8580) 2018},
+  title         = {Neural Tangent Kernel: Convergence and Generalization in Neural Networks},
+  year          = {2018},
+  month         = jun,
+  abstract      = {At initialization, artificial neural networks (ANNs) are equivalent to Gaussian processes in the infinite-width limit, thus connecting them to kernel methods. We prove that the evolution of an ANN during training can also be described by a kernel: during gradient descent on the parameters of an ANN, the network function $f_\theta$ (which maps input vectors to output vectors) follows the kernel gradient of the functional cost (which is convex, in contrast to the parameter cost) w.r.t. a new kernel: the Neural Tangent Kernel (NTK). This kernel is central to describe the generalization features of ANNs. While the NTK is random at initialization and varies during training, in the infinite-width limit it converges to an explicit limiting kernel and it stays constant during training. This makes it possible to study the training of ANNs in function space instead of parameter space. Convergence of the training can then be related to the positive-definiteness of the limiting NTK. We prove the positive-definiteness of the limiting NTK when the data is supported on the sphere and the non-linearity is non-polynomial. We then focus on the setting of least-squares regression and show that in the infinite-width limit, the network function $f_\theta$ follows a linear differential equation during training. The convergence is fastest along the largest kernel principal components of the input data with respect to the NTK, hence suggesting a theoretical motivation for early stopping. Finally we study the NTK numerically, observe its behavior for wide networks, and compare it to the infinite-width limit.},
+  archiveprefix = {arXiv},
+  eprint        = {1806.07572},
+  file          = {:2018/Jacot2018 - Neural Tangent Kernel_ Convergence and Generalization in Neural Networks.pdf:PDF},
+  groups        = {Theorectical},
+  keywords      = {cs.LG, cs.NE, math.PR, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Domingos2020,
+  author        = {Pedro Domingos},
+  title         = {Every Model Learned by Gradient Descent Is Approximately a Kernel Machine},
+  year          = {2020},
+  month         = nov,
+  abstract      = {Deep learning's successes are often attributed to its ability to automatically discover new representations of the data, rather than relying on handcrafted features like other learning methods. We show, however, that deep networks learned by the standard gradient descent algorithm are in fact mathematically approximately equivalent to kernel machines, a learning method that simply memorizes the data and uses it directly for prediction via a similarity function (the kernel). This greatly enhances the interpretability of deep network weights, by elucidating that they are effectively a superposition of the training examples. The network architecture incorporates knowledge of the target function into the kernel. This improved understanding should lead to better learning algorithms.},
+  archiveprefix = {arXiv},
+  eprint        = {2012.00152},
+  file          = {:2020/Domingos2020 - Every Model Learned by Gradient Descent Is Approximately a Kernel Machine.pdf:PDF},
+  groups        = {Theorectical},
+  keywords      = {cs.LG, cs.NE, stat.ML, I.2.6; I.5.1},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Hinton2015,
+  author        = {Geoffrey Hinton and Oriol Vinyals and Jeff Dean},
+  title         = {Distilling the Knowledge in a Neural Network},
+  year          = {2015},
+  month         = mar,
+  abstract      = {A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.},
+  archiveprefix = {arXiv},
+  eprint        = {1503.02531},
+  file          = {:2015/Hinton2015 - Distilling the Knowledge in a Neural Network.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {stat.ML, cs.LG, cs.NE},
+  primaryclass  = {stat.ML},
+}
+
+@Article{Mirzadeh2019,
+  author        = {Seyed-Iman Mirzadeh and Mehrdad Farajtabar and Ang Li and Nir Levine and Akihiro Matsukawa and Hassan Ghasemzadeh},
+  title         = {Improved Knowledge Distillation via Teacher Assistant},
+  year          = {2019},
+  month         = feb,
+  abstract      = {Despite the fact that deep neural networks are powerful models and achieve appealing results on many tasks, they are too large to be deployed on edge devices like smartphones or embedded sensor nodes. There have been efforts to compress these networks, and a popular method is knowledge distillation, where a large (teacher) pre-trained network is used to train a smaller (student) network. However, in this paper, we show that the student network performance degrades when the gap between student and teacher is large. Given a fixed student network, one cannot employ an arbitrarily large teacher, or in other words, a teacher can effectively transfer its knowledge to students up to a certain size, not smaller. To alleviate this shortcoming, we introduce multi-step knowledge distillation, which employs an intermediate-sized network (teacher assistant) to bridge the gap between the student and the teacher. Moreover, we study the effect of teacher assistant size and extend the framework to multi-step distillation. Theoretical analysis and extensive experiments on CIFAR-10,100 and ImageNet datasets and on CNN and ResNet architectures substantiate the effectiveness of our proposed approach.},
+  archiveprefix = {arXiv},
+  eprint        = {1902.03393},
+  file          = {:2019/Mirzadeh2019 - Improved Knowledge Distillation Via Teacher Assistant.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Cho2019,
+  author        = {Jang Hyun Cho and Bharath Hariharan},
+  journal       = {ICCV 2019},
+  title         = {On the Efficacy of Knowledge Distillation},
+  year          = {2019},
+  month         = oct,
+  abstract      = {In this paper, we present a thorough evaluation of the efficacy of knowledge distillation and its dependence on student and teacher architectures. Starting with the observation that more accurate teachers often don't make good teachers, we attempt to tease apart the factors that affect knowledge distillation performance. We find crucially that larger models do not often make better teachers. We show that this is a consequence of mismatched capacity, and that small students are unable to mimic large teachers. We find typical ways of circumventing this (such as performing a sequence of knowledge distillation steps) to be ineffective. Finally, we show that this effect can be mitigated by stopping the teacher's training early. Our results generalize across datasets and models.},
+  archiveprefix = {arXiv},
+  eprint        = {1910.01348},
+  file          = {:2019/Cho2019 - On the Efficacy of Knowledge Distillation.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.LG, cs.CV},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Xie2019,
+  author        = {Qizhe Xie and Minh-Thang Luong and Eduard Hovy and Quoc V. Le},
+  title         = {Self-training with Noisy Student improves ImageNet classification},
+  year          = {2019},
+  month         = nov,
+  abstract      = {We present Noisy Student Training, a semi-supervised learning approach that works well even when labeled data is abundant. Noisy Student Training achieves 88.4% top-1 accuracy on ImageNet, which is 2.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 61.0% to 83.7%, reduces ImageNet-C mean corruption error from 45.7 to 28.3, and reduces ImageNet-P mean flip rate from 27.8 to 12.2. Noisy Student Training extends the idea of self-training and distillation with the use of equal-or-larger student models and noise added to the student during learning. On ImageNet, we first train an EfficientNet model on labeled images and use it as a teacher to generate pseudo labels for 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the learning of the student, we inject noise such as dropout, stochastic depth, and data augmentation via RandAugment to the student so that the student generalizes better than the teacher. Models are available at https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet. Code is available at https://github.com/google-research/noisystudent.},
+  archiveprefix = {arXiv},
+  eprint        = {1911.04252},
+  file          = {:2019/Xie2019 - Self Training with Noisy Student Improves ImageNet Classification.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.LG, cs.CV, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{,
+  author = {Cristian Bucila, Rich Caruana, Alexandru Niculescu-Mizil},
+  title  = {Model Compression},
+  year   = {2006},
+  file   = {:2006/- Model Compression.pdf:PDF},
+  groups = {Knowledge Distillation},
+  url    = {https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf},
+}
+
+@Article{Yuan2019,
+  author        = {Li Yuan and Francis E. H. Tay and Guilin Li and Tao Wang and Jiashi Feng},
+  journal       = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2020},
+  title         = {Revisiting Knowledge Distillation via Label Smoothing Regularization},
+  year          = {2019},
+  month         = sep,
+  abstract      = {Knowledge Distillation (KD) aims to distill the knowledge of a cumbersome teacher model into a lightweight student model. Its success is generally attributed to the privileged information on similarities among categories provided by the teacher model, and in this sense, only strong teacher models are deployed to teach weaker students in practice. In this work, we challenge this common belief by following experimental observations: 1) beyond the acknowledgment that the teacher can improve the student, the student can also enhance the teacher significantly by reversing the KD procedure; 2) a poorly-trained teacher with much lower accuracy than the student can still improve the latter significantly. To explain these observations, we provide a theoretical analysis of the relationships between KD and label smoothing regularization. We prove that 1) KD is a type of learned label smoothing regularization and 2) label smoothing regularization provides a virtual teacher model for KD. From these results, we argue that the success of KD is not fully due to the similarity information between categories from teachers, but also to the regularization of soft targets, which is equally or even more important. Based on these analyses, we further propose a novel Teacher-free Knowledge Distillation (Tf-KD) framework, where a student model learns from itself or manuallydesigned regularization distribution. The Tf-KD achieves comparable performance with normal KD from a superior teacher, which is well applied when a stronger teacher model is unavailable. Meanwhile, Tf-KD is generic and can be directly deployed for training deep neural networks. Without any extra computation cost, Tf-KD achieves up to 0.65\% improvement on ImageNet over well-established baseline models, which is superior to label smoothing regularization.},
+  archiveprefix = {arXiv},
+  eprint        = {1909.11723},
+  file          = {:2019/Yuan2019 - Revisiting Knowledge Distillation Via Label Smoothing Regularization.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.CV, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Rajasegaran2020,
+  author        = {Jathushan Rajasegaran and Salman Khan and Munawar Hayat and Fahad Shahbaz Khan and Mubarak Shah},
+  title         = {Self-supervised Knowledge Distillation for Few-shot Learning},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Real-world contains an overwhelmingly large number of object classes, learning all of which at once is infeasible. Few shot learning is a promising learning paradigm due to its ability to learn out of order distributions quickly with only a few samples. Recent works [7, 41] show that simply learning a good feature embedding can outperform more sophisticated meta-learning and metric learning algorithms for few-shot learning. In this paper, we propose a simple approach to improve the representation capacity of deep neural networks for few-shot learning tasks. We follow a two-stage learning process: First, we train a neural network to maximize the entropy of the feature embedding, thus creating an optimal output manifold using a self-supervised auxiliary loss. In the second stage, we minimize the entropy on feature embedding by bringing self-supervised twins together, while constraining the manifold with student-teacher distillation. Our experiments show that, even in the first stage, self-supervision can outperform current state-of-the-art methods, with further gains achieved by our second stage distillation process. Our codes are available at: https://github.com/brjathu/SKD.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.09785},
+  file          = {:2020/Rajasegaran2020 - Self Supervised Knowledge Distillation for Few Shot Learning.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Xu2017,
+  author        = {Zheng Xu and Yen-Chang Hsu and Jiawei Huang},
+  title         = {Training Shallow and Thin Networks for Acceleration via Knowledge Distillation with Conditional Adversarial Networks},
+  year          = {2017},
+  month         = sep,
+  abstract      = {There is an increasing interest on accelerating neural networks for real-time applications. We study the student-teacher strategy, in which a small and fast student network is trained with the auxiliary information learned from a large and accurate teacher network. We propose to use conditional adversarial networks to learn the loss function to transfer knowledge from teacher to student. The proposed method is particularly effective for relatively small student networks. Moreover, experimental results show the effect of network size when the modern networks are used as student. We empirically study the trade-off between inference time and classification accuracy, and provide suggestions on choosing a proper student network.},
+  archiveprefix = {arXiv},
+  comment       = {GAN 的架構主要還是拿來訓練分類問題},
+  eprint        = {1709.00513},
+  file          = {:2017/Xu2017 - Training Shallow and Thin Networks for Acceleration Via Knowledge Distillation with Conditional Adversarial Networks.pdf:PDF},
+  groups        = {Knowledge Distillation},
+  keywords      = {cs.LG, cs.AI, cs.CV},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Richardson2021,
+  author   = {Elad Richardson, Yuval Alaluf, Or Patashnik, Yotam Nitzan, Yaniv Azar, Stav Shapiro, Daniel Cohen-Or},
+  title    = {Encoding in Style: A StyleGAN Encoder for Image-to-Image Translation},
+  year     = {2021},
+  abstract = {IEEE Conference on Computer Vision and Pattern Recognition},
+  file     = {:/home/yct/OneDrive/Paper/2021/Richardson_Encoding_in_Style_A_StyleGAN_Encoder_for_Image-to-Image_Translation_CVPR_2021_paper.pdf:PDF},
+  groups   = {StyleGAN-is-good},
+}
+
+@Article{article,
+  author  = {Hermosilla, Gabriel and Henriquez, Diego-Ignacio and Allende-Cid, Héctor and Farias, Gonzalo and Vera, Esteban},
+  journal = {IEEE Access},
+  title   = {Thermal Face Generation using StyleGAN},
+  year    = {2021},
+  month   = {06},
+  pages   = {1-1},
+  volume  = {PP},
+  doi     = {10.1109/ACCESS.2021.3085423},
+  groups  = {StyleGAN-is-good},
+}
+
+@InProceedings{2016,
+  author    = {Date of publication xxxx and date of current version xxxx},
+  title     = {Thermal Face Generation using StyleGAN},
+  year      = {2016},
+  publisher = {IEEE},
+  abstract  = {IEEE Access; ;PP;99;10.1109/ACCESS.2021.3085423},
+  doi       = {10.1109/ACCESS.2021.3085423,},
+  file      = {:/home/yct/OneDrive/Paper/2021/Thermal_Face_Generation_using_StyleGAN.pdf:PDF},
+  groups    = {StyleGAN-is-good},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:StyleGAN\;0\;1\;0xff0000ff\;\;StyleGAN family\;;
 1 KeywordGroup:Pose\;0\;keywords\;Pose\;0\;0\;1\;0x80b380ff\;\;Synthesis with pose condition\;;
+1 StaticGroup:Theorectical\;0\;1\;0x000000ff\;\;\;;
+1 StaticGroup:Knowledge Distillation\;0\;0\;0x00ffffff\;heat\;Knowledge(Model) distillation\;;
+1 StaticGroup:StyleGAN-is-good\;0\;1\;0x8a8a8aff\;\;\;;
 }
