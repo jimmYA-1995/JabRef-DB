@@ -393,6 +393,77 @@ radially symmetric kernel},
   primaryclass  = {cs.CV},
 }
 
+@Article{Miyato2018,
+  author        = {Takeru Miyato and Masanori Koyama},
+  title         = {cGANs with Projection Discriminator},
+  year          = {2018},
+  month         = feb,
+  abstract      = {We propose a novel, projection based way to incorporate the conditional information into the discriminator of GANs that respects the role of the conditional information in the underlining probabilistic model. This approach is in contrast with most frameworks of conditional GANs used in application today, which use the conditional information by concatenating the (embedded) conditional vector to the feature vectors. With this modification, we were able to significantly improve the quality of the class conditional image generation on ILSVRC2012 (ImageNet) 1000-class image dataset from the current state-of-the-art result, and we achieved this with a single pair of a discriminator and a generator. We were also able to extend the application to super-resolution and succeeded in producing highly discriminative super-resolution images. This new structure also enabled high quality category transformation based on parametric functional transformation of conditional batch normalization layers in the generator.},
+  archiveprefix = {arXiv},
+  eprint        = {1802.05637},
+  file          = {:2018/Miyato2018 - CGANs with Projection Discriminator.pdf:PDF},
+  keywords      = {cs.LG, cs.CV, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Kazemi2014,
+  author          = {Vahid Kazemi and Josephine Sullivan},
+  title           = {One millisecond face alignment with an ensemble of regression trees},
+  year            = {2014},
+  address         = {Columbus, OH, USA},
+  pages           = {1867--1874},
+  publisher       = {IEEE},
+  abstract        = {This paper addresses the problem of Face Alignment for a single image. We show how an ensemble of regression trees can be used to estimate the face's landmark positions directly from a sparse subset of pixel intensities, achieving super-realtime performance with high quality predictions. We present a general framework based on gradient boosting for learning an ensemble of regression trees that optimizes the sum of square error loss and naturally handles missing or partially labelled data. We show how using appropriate priors exploiting the structure of image data helps with efficient feature selection. Different regularization strategies and its importance to combat overfitting are also investigated. In addition, we analyse the effect of the quantity of training data on the accuracy of the predictions and explore the effect of data augmentation using synthesized data.},
+  date            = {23-28 June 2014},
+  doi             = {10.1109/CVPR.2014.241},
+  eventdate       = {23-28 June 2014},
+  eventtitleaddon = {Columbus, OH, USA},
+  file            = {:2014/Kazemi2014 - One Millisecond Face Alignment with an Ensemble of Regression Trees.html:URL},
+  isbn            = {978-1-4799-5118-5},
+  issn            = {1063-6919},
+  journal         = {2014 IEEE Conference on Computer Vision and Pattern Recognition},
+  keywords        = {Shape, Regression tree analysis, Face, Training, Boosting, Training data, Vectors, Face Alignment, Real-Time, Gradient Boosting, Decision Trees},
+}
+
+@Article{Yu2015,
+  author        = {Fisher Yu and Ari Seff and Yinda Zhang and Shuran Song and Thomas Funkhouser and Jianxiong Xiao},
+  title         = {LSUN: Construction of a Large-scale Image Dataset using Deep Learning with Humans in the Loop},
+  year          = {2015},
+  month         = jun,
+  abstract      = {While there has been remarkable progress in the performance of visual recognition algorithms, the state-of-the-art models tend to be exceptionally data-hungry. Large labeled training datasets, expensive and tedious to produce, are required to optimize millions of parameters in deep network models. Lagging behind the growth in model capacity, the available datasets are quickly becoming outdated in terms of size and density. To circumvent this bottleneck, we propose to amplify human effort through a partially automated labeling scheme, leveraging deep learning with humans in the loop. Starting from a large set of candidate images for each category, we iteratively sample a subset, ask people to label them, classify the others with a trained model, split the set into positives, negatives, and unlabeled based on the classification confidence, and then iterate with the unlabeled set. To assess the effectiveness of this cascading procedure and enable further progress in visual recognition research, we construct a new image dataset, LSUN. It contains around one million labeled images for each of 10 scene categories and 20 object categories. We experiment with training popular convolutional networks and find that they achieve substantial performance gains when trained on this dataset.},
+  archiveprefix = {arXiv},
+  eprint        = {1506.03365},
+  file          = {:2015/Yu2015 - LSUN_ Construction of a Large Scale Image Dataset Using Deep Learning with Humans in the Loop.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Sauer2021,
+  author        = {Axel Sauer and Kashyap Chitta and Jens Müller and Andreas Geiger},
+  title         = {Projected GANs Converge Faster},
+  year          = {2021},
+  month         = nov,
+  abstract      = {Generative Adversarial Networks (GANs) produce high-quality images but are challenging to train. They need careful regularization, vast amounts of compute, and expensive hyper-parameter sweeps. We make significant headway on these issues by projecting generated and real samples into a fixed, pretrained feature space. Motivated by the finding that the discriminator cannot fully exploit features from deeper layers of the pretrained model, we propose a more effective strategy that mixes features across channels and resolutions. Our Projected GAN improves image quality, sample efficiency, and convergence speed. It is further compatible with resolutions of up to one Megapixel and advances the state-of-the-art Fr\'echet Inception Distance (FID) on twenty-two benchmark datasets. Importantly, Projected GANs match the previously lowest FIDs up to 40 times faster, cutting the wall-clock time from 5 days to less than 3 hours given the same computational resources.},
+  archiveprefix = {arXiv},
+  eprint        = {2111.01007},
+  file          = {:2021/Sauer2021 - Projected GANs Converge Faster.pdf:PDF},
+  keywords      = {cs.CV, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Ho2020,
+  author        = {Jonathan Ho and Ajay Jain and Pieter Abbeel},
+  title         = {Denoising Diffusion Probabilistic Models},
+  year          = {2020},
+  month         = jun,
+  abstract      = {We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at https://github.com/hojonathanho/diffusion},
+  archiveprefix = {arXiv},
+  eprint        = {2006.11239},
+  file          = {:2020/Ho2020 - Denoising Diffusion Probabilistic Models.pdf:PDF},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
