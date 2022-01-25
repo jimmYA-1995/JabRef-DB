@@ -85,7 +85,7 @@ radially symmetric kernel},
   archiveprefix = {arXiv},
   eprint        = {1812.04948},
   file          = {:Generative model/1812CVPR StyleGAN - A Style-Based Generator Architecture for Generative Adversarial Networks (Karras).pdf:PDF},
-  groups        = {StyleGAN},
+  groups        = {StyleGAN, dataset},
   keywords      = {cs.NE, cs.LG, stat.ML},
   primaryclass  = {cs.NE},
   readstatus    = {read},
@@ -101,7 +101,7 @@ radially symmetric kernel},
   archiveprefix = {arXiv},
   eprint        = {1710.10196},
   file          = {:Generative model/1710ICLR PG-GAN Progressive Growing of GANs for Improved Quality, Stability, and Variation (Karras).pdf:PDF},
-  groups        = {StyleGAN},
+  groups        = {StyleGAN, dataset},
   keywords      = {cs.NE, cs.LG, stat.ML},
   primaryclass  = {cs.NE},
   readstatus    = {read},
@@ -464,6 +464,137 @@ radially symmetric kernel},
   primaryclass  = {cs.LG},
 }
 
+@Misc{Liu2016,
+  author = {Ziwei Liu and Ping Luo and Shi Qiu and Xiaogang Wang and Xiaoou Tang},
+  title  = {DeepFashion: Powering Robust Clothes Recognition and Retrieval with Rich Annotations},
+  year   = {2016},
+  doi    = {10.1109/cvpr.2016.124},
+}
+
+@Article{King2009,
+  author    = {Davis E. King},
+  journal   = {J. Mach. Learn. Res.},
+  title     = {Dlib-ml: {A} Machine Learning Toolkit},
+  year      = {2009},
+  pages     = {1755--1758},
+  volume    = {10},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/jmlr/King09.bib},
+  url       = {https://dl.acm.org/citation.cfm?id=1755843},
+}
+
+@Misc{2019,
+  title = {DEEP-ML 2019 Program Committee},
+  year  = {2019},
+  doi   = {10.1109/deep-ml.2019.00007},
+}
+
+@Article{Choi2019,
+  author        = {Yunjey Choi and Youngjung Uh and Jaejun Yoo and Jung-Woo Ha},
+  title         = {StarGAN v2: Diverse Image Synthesis for Multiple Domains},
+  year          = {2019},
+  month         = dec,
+  abstract      = {A good image-to-image translation model should learn a mapping between different visual domains while satisfying the following properties: 1) diversity of generated images and 2) scalability over multiple domains. Existing methods address either of the issues, having limited diversity or multiple models for all domains. We propose StarGAN v2, a single framework that tackles both and shows significantly improved results over the baselines. Experiments on CelebA-HQ and a new animal faces dataset (AFHQ) validate our superiority in terms of visual quality, diversity, and scalability. To better assess image-to-image translation models, we release AFHQ, high-quality animal faces with large inter- and intra-domain differences. The code, pretrained models, and dataset can be found at https://github.com/clovaai/stargan-v2.},
+  archiveprefix = {arXiv},
+  eprint        = {1912.01865},
+  file          = {:2019/Choi2019 - StarGAN V2_ Diverse Image Synthesis for Multiple Domains.pdf:PDF},
+  groups        = {dataset},
+  keywords      = {cs.CV, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Gou2020,
+  author        = {Jianping Gou and Baosheng Yu and Stephen John Maybank and Dacheng Tao},
+  title         = {Knowledge Distillation: A Survey},
+  year          = {2020},
+  month         = jun,
+  abstract      = {In recent years, deep neural networks have been successful in both industry and academia, especially for computer vision tasks. The great success of deep learning is mainly due to its scalability to encode large-scale data and to maneuver billions of model parameters. However, it is a challenge to deploy these cumbersome deep models on devices with limited resources, e.g., mobile phones and embedded devices, not only because of the high computational complexity but also the large storage requirements. To this end, a variety of model compression and acceleration techniques have been developed. As a representative type of model compression and acceleration, knowledge distillation effectively learns a small student model from a large teacher model. It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications. Furthermore, challenges in knowledge distillation are briefly reviewed and comments on future research are discussed and forwarded.},
+  archiveprefix = {arXiv},
+  doi           = {10.1007/s11263-021-01453-z},
+  eprint        = {2006.05525},
+  file          = {:2020/Gou2020 - Knowledge Distillation_ a Survey.pdf:PDF},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Wang2017,
+  author        = {Ting-Chun Wang and Ming-Yu Liu and Jun-Yan Zhu and Andrew Tao and Jan Kautz and Bryan Catanzaro},
+  title         = {High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs},
+  year          = {2017},
+  month         = nov,
+  abstract      = {We present a new method for synthesizing high-resolution photo-realistic images from semantic label maps using conditional generative adversarial networks (conditional GANs). Conditional GANs have enabled a variety of applications, but the results are often limited to low-resolution and still far from realistic. In this work, we generate 2048x1024 visually appealing results with a novel adversarial loss, as well as new multi-scale generator and discriminator architectures. Furthermore, we extend our framework to interactive visual manipulation with two additional features. First, we incorporate object instance segmentation information, which enables object manipulations such as removing/adding objects and changing the object category. Second, we propose a method to generate diverse results given the same input, allowing users to edit the object appearance interactively. Human opinion studies demonstrate that our method significantly outperforms existing methods, advancing both the quality and the resolution of deep image synthesis and editing.},
+  archiveprefix = {arXiv},
+  eprint        = {1711.11585},
+  file          = {:2017/Wang2017 - High Resolution Image Synthesis and Semantic Manipulation with Conditional GANs.pdf:PDF},
+  keywords      = {cs.CV, cs.GR, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Chang2020,
+  author        = {Ting-Yun Chang and Chi-Jen Lu},
+  title         = {TinyGAN: Distilling BigGAN for Conditional Image Generation},
+  year          = {2020},
+  month         = sep,
+  abstract      = {Generative Adversarial Networks (GANs) have become a powerful approach for generative image modeling. However, GANs are notorious for their training instability, especially on large-scale, complex datasets. While the recent work of BigGAN has significantly improved the quality of image generation on ImageNet, it requires a huge model, making it hard to deploy on resource-constrained devices. To reduce the model size, we propose a black-box knowledge distillation framework for compressing GANs, which highlights a stable and efficient training process. Given BigGAN as the teacher network, we manage to train a much smaller student network to mimic its functionality, achieving competitive performance on Inception and FID scores with the generator having $16\times$ fewer parameters.},
+  archiveprefix = {arXiv},
+  eprint        = {2009.13829},
+  file          = {:2020/Chang2020 - TinyGAN_ Distilling BigGAN for Conditional Image Generation.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Huang2017,
+  author        = {Xun Huang and Serge Belongie},
+  title         = {Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization},
+  year          = {2017},
+  month         = mar,
+  abstract      = {Gatys et al. recently introduced a neural algorithm that renders a content image in the style of another image, achieving so-called style transfer. However, their framework requires a slow iterative optimization process, which limits its practical application. Fast approximations with feed-forward neural networks have been proposed to speed up neural style transfer. Unfortunately, the speed improvement comes at a cost: the network is usually tied to a fixed set of styles and cannot adapt to arbitrary new styles. In this paper, we present a simple yet effective approach that for the first time enables arbitrary style transfer in real-time. At the heart of our method is a novel adaptive instance normalization (AdaIN) layer that aligns the mean and variance of the content features with those of the style features. Our method achieves speed comparable to the fastest existing approach, without the restriction to a pre-defined set of styles. In addition, our approach allows flexible user controls such as content-style trade-off, style interpolation, color & spatial controls, all using a single feed-forward neural network.},
+  archiveprefix = {arXiv},
+  eprint        = {1703.06868},
+  file          = {:2017/Huang2017 - Arbitrary Style Transfer in Real Time with Adaptive Instance Normalization.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Lin2021,
+  author        = {Chieh Hubert Lin and Hsin-Ying Lee and Yen-Chi Cheng and Sergey Tulyakov and Ming-Hsuan Yang},
+  title         = {InfinityGAN: Towards Infinite-Pixel Image Synthesis},
+  year          = {2021},
+  month         = apr,
+  abstract      = {We present a novel framework, InfinityGAN, for arbitrary-sized image generation. The task is associated with several key challenges. First, scaling existing models to an arbitrarily large image size is resource-constrained, in terms of both computation and availability of large-field-of-view training data. InfinityGAN trains and infers in a seamless patch-by-patch manner with low computational resources. Second, large images should be locally and globally consistent, avoid repetitive patterns, and look realistic. To address these, InfinityGAN disentangles global appearances, local structures, and textures. With this formulation, we can generate images with spatial size and level of details not attainable before. Experimental evaluation validates that InfinityGAN generates images with superior realism compared to baselines and features parallelizable inference. Finally, we show several applications unlocked by our approach, such as spatial style fusion, multi-modal outpainting, and image inbetweening. All applications can be operated with arbitrary input and output sizes.},
+  archiveprefix = {arXiv},
+  eprint        = {2104.03963},
+  file          = {:2021/Lin2021 - InfinityGAN_ Towards Infinite Pixel Image Synthesis.pdf:PDF},
+  keywords      = {cs.CV},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Liu2021a,
+  author        = {Bingchen Liu and Yizhe Zhu and Kunpeng Song and Ahmed Elgammal},
+  title         = {Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis},
+  year          = {2021},
+  month         = jan,
+  abstract      = {Training Generative Adversarial Networks (GAN) on high-fidelity images usually requires large-scale GPU-clusters and a vast number of training images. In this paper, we study the few-shot image synthesis task for GAN with minimum computing cost. We propose a light-weight GAN structure that gains superior quality on 1024*1024 resolution. Notably, the model converges from scratch with just a few hours of training on a single RTX-2080 GPU, and has a consistent performance, even with less than 100 training samples. Two technique designs constitute our work, a skip-layer channel-wise excitation module and a self-supervised discriminator trained as a feature-encoder. With thirteen datasets covering a wide variety of image domains (The datasets and code are available at: https://github.com/odegeasslbc/FastGAN-pytorch), we show our model's superior performance compared to the state-of-the-art StyleGAN2, when data and computing budget are limited.},
+  archiveprefix = {arXiv},
+  eprint        = {2101.04775},
+  file          = {:2021/Liu2021a - Towards Faster and Stabilized GAN Training for High Fidelity Few Shot Image Synthesis.pdf:PDF},
+  keywords      = {cs.CV, cs.AI},
+  primaryclass  = {cs.CV},
+}
+
+@Article{Yu2021,
+  author        = {Jiahui Yu and Xin Li and Jing Yu Koh and Han Zhang and Ruoming Pang and James Qin and Alexander Ku and Yuanzhong Xu and Jason Baldridge and Yonghui Wu},
+  title         = {Vector-quantized Image Modeling with Improved VQGAN},
+  year          = {2021},
+  month         = oct,
+  abstract      = {Pretraining language models with next-token prediction on massive text corpora has delivered phenomenal zero-shot, few-shot, transfer learning and multi-tasking capabilities on both generative and discriminative language tasks. Motivated by this success, we explore a Vector-quantized Image Modeling (VIM) approach that involves pretraining a Transformer to predict rasterized image tokens autoregressively. The discrete image tokens are encoded from a learned Vision-Transformer-based VQGAN (ViT-VQGAN). We first propose multiple improvements over vanilla VQGAN from architecture to codebook learning, yielding better efficiency and reconstruction fidelity. The improved ViT-VQGAN further improves vector-quantized image modeling tasks, including unconditional, class-conditioned image generation and unsupervised representation learning. When trained on ImageNet at 256x256 resolution, we achieve Inception Score (IS) of 175.1 and Fr'echet Inception Distance (FID) of 4.17, a dramatic improvement over the vanilla VQGAN, which obtains 70.6 and 17.04 for IS and FID, respectively. Based on ViT-VQGAN and unsupervised pretraining, we further evaluate the pretrained Transformer by averaging intermediate features, similar to Image GPT (iGPT). This ImageNet-pretrained VIM-L significantly beats iGPT-L on linear-probe accuracy from 60.3% to 72.2% for a similar model size. ViM-L also outperforms iGPT-XL which is trained with extra web image data and larger model size.},
+  archiveprefix = {arXiv},
+  eprint        = {2110.04627},
+  file          = {:2021/Yu2021 - Vector Quantized Image Modeling with Improved VQGAN.pdf:PDF},
+  keywords      = {cs.CV, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -471,6 +602,7 @@ radially symmetric kernel},
 1 StaticGroup:StyleGAN\;0\;1\;0xff0000ff\;\;StyleGAN family\;;
 1 KeywordGroup:Pose\;0\;keywords\;Pose\;0\;0\;1\;0x80b380ff\;\;Synthesis with pose condition\;;
 1 StaticGroup:Theorectical\;0\;1\;0x000000ff\;\;\;;
-1 StaticGroup:Knowledge Distillation\;0\;0\;0x00ffffff\;heat\;Knowledge(Model) distillation\;;
+1 StaticGroup:Knowledge Distillation\;0\;1\;0x00ffffff\;heat\;Knowledge(Model) distillation\;;
 1 StaticGroup:StyleGAN-is-good\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:dataset\;0\;1\;0x0000ffff\;\;\;;
 }
