@@ -626,7 +626,7 @@ radially symmetric kernel},
   archiveprefix = {arXiv},
   doi           = {10.1007/s11263-019-01228-7},
   eprint        = {1610.02391},
-  file          = {:http\://arxiv.org/pdf/1610.02391v4:PDF},
+  file          = {:2016/Selvaraju2016 - Grad CAM_ Visual Explanations from Deep Networks Via Gradient Based Localization.pdf:PDF},
   keywords      = {cs.CV, cs.AI, cs.LG},
   primaryclass  = {cs.CV},
 }
