@@ -595,6 +595,42 @@ radially symmetric kernel},
   primaryclass  = {cs.CV},
 }
 
+@Article{Kynkaeaenniemi2022,
+  author        = {Tuomas Kynkäänniemi and Tero Karras and Miika Aittala and Timo Aila and Jaakko Lehtinen},
+  title         = {The Role of ImageNet Classes in Fréchet Inception Distance},
+  year          = {2022},
+  month         = mar,
+  abstract      = {Fr\'echet Inception Distance (FID) is a metric for quantifying the distance between two distributions of images. Given its status as a standard yardstick for ranking models in data-driven generative modeling research, it seems important that the distance is computed from general, "vision-related" features. But is it? We observe that FID is essentially a distance between sets of ImageNet class probabilities. We trace the reason to the fact that the standard feature space, the penultimate "pre-logit" layer of a particular Inception-V3 classifier network, is only one affine transform away from the logits, i.e., ImageNet classes, and thus, the features are necessarily highly specialized to them. This has unintuitive consequences for the metric's sensitivity. For example, when evaluating a model for human faces, we observe that, on average, FID is actually very insensitive to the facial region, and that the probabilities of classes like "bow tie" or "seat belt" play a much larger role. Further, we show that FID can be significantly reduced -- without actually improving the quality of results -- by an attack that first generates a slightly larger set of candidates, and then chooses a subset that happens to match the histogram of such "fringe features" in the real data. We then demonstrate that this observation has practical relevance in case of ImageNet pre-training of GANs, where a part of the observed FID improvement turns out not to be real. Our results suggest caution against over-interpreting FID improvements, and underline the need for distribution metrics that are more perceptually uniform.},
+  archiveprefix = {arXiv},
+  eprint        = {2203.06026},
+  file          = {:2022/Kynkaeaenniemi2022 - The Role of ImageNet Classes in Fréchet Inception Distance.pdf:PDF},
+  keywords      = {cs.CV, cs.AI, cs.LG, cs.NE, stat.ML},
+  primaryclass  = {cs.CV},
+}
+
+@Article{,
+  author  = {Stanislav Morozov, Andrey Voynov, Artem Babenko},
+  journal = {ICLR},
+  title   = {On Self-Supervised Image Representations For GAN Evaluation},
+  year    = {2021},
+  file    = {:2021/Morozov2021 - on self supervised image repre.pdf:PDF},
+  url     = {https://openreview.net/pdf?id=NeRdBeTionN},
+}
+
+@Article{Selvaraju2016,
+  author        = {Ramprasaath R. Selvaraju and Michael Cogswell and Abhishek Das and Ramakrishna Vedantam and Devi Parikh and Dhruv Batra},
+  title         = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization},
+  year          = {2016},
+  month         = oct,
+  abstract      = {We propose a technique for producing "visual explanations" for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting important regions in the image for predicting the concept. Grad-CAM is applicable to a wide variety of CNN model-families: (1) CNNs with fully-connected layers, (2) CNNs used for structured outputs, (3) CNNs used in tasks with multimodal inputs or reinforcement learning, without any architectural changes or re-training. We combine Grad-CAM with fine-grained visualizations to create a high-resolution class-discriminative visualization and apply it to off-the-shelf image classification, captioning, and visual question answering (VQA) models, including ResNet-based architectures. In the context of image classification models, our visualizations (a) lend insights into their failure modes, (b) are robust to adversarial images, (c) outperform previous methods on localization, (d) are more faithful to the underlying model and (e) help achieve generalization by identifying dataset bias. For captioning and VQA, we show that even non-attention based models can localize inputs. We devise a way to identify important neurons through Grad-CAM and combine it with neuron names to provide textual explanations for model decisions. Finally, we design and conduct human studies to measure if Grad-CAM helps users establish appropriate trust in predictions from models and show that Grad-CAM helps untrained users successfully discern a 'stronger' nodel from a 'weaker' one even when both make identical predictions. Our code is available at https://github.com/ramprs/grad-cam/, along with a demo at http://gradcam.cloudcv.org, and a video at youtu.be/COjUB9Izk6E.},
+  archiveprefix = {arXiv},
+  doi           = {10.1007/s11263-019-01228-7},
+  eprint        = {1610.02391},
+  file          = {:http\://arxiv.org/pdf/1610.02391v4:PDF},
+  keywords      = {cs.CV, cs.AI, cs.LG},
+  primaryclass  = {cs.CV},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
